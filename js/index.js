@@ -81,8 +81,8 @@ function toggleDarkMode() {
     const icon = btnDarkMode.querySelector('i');
 }
     if (document.body.classList.toogle('dark-mode')) {
-    icon.classList.remove('fa-moon');
-    icon.classList.add('fa-sun');
+    icon.classList.remove('fa-moon') = btnDarkMode;
+    icon.classList.add('fa-sun') = btnDarkMode;
     }
     else {
     icon.classList.remove('fa-sun');
