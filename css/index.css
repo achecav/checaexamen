@@ -1,0 +1,152 @@
+:root {
+  /* Light Mode */
+  --light-bg: #fff;
+  --light-text: black;
+  
+  /* Dark Mode */
+  --dark-bg: #292828;
+  --dark-text: #f2f2f2;
+  --dark-btn-bg: #575555;
+
+  /* Comuns */
+  --btn-bg: cadetblue;
+  --btn-text: white;
+  --exercici-color: chocolate;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+header {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 10px 0;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+main {
+  margin: 1% 5%;
+  border: 5px solid var(--light-text);
+  border-radius: 25px;
+  line-height: 110%;
+  padding: 20px;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+li.enunciat {
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+li.enunciat:last-child {
+  border-bottom: none;
+}
+
+.titulo {
+  margin-bottom: 10px;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.left {
+  flex: 1 1 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.explicacio {
+  font-weight: normal;
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+.exercici {
+  font-weight: bold;
+  font-size: medium;
+  color: var(--exercici-color);
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border-radius: 5px;
+  padding: 6px 8px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  background-color: beige;
+  width: 50px;
+}
+
+.dau {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+#darkMode {
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  font-size: xx-large;
+}
+
+footer {
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.dark-mode header,
+.dark-mode main,
+.dark-mode footer {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.dark-mode main {
+  border-color: var(--dark-text);
+}
+
+.dark-mode button {
+  background-color: var(--dark-btn-bg);
+  color: var(--dark-text);
+}

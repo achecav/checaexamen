@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen JS 2024/25</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/index_resolt.js" defer></script>
+</head>
+
+<body class="light-mode">
+    <header>
+        <div>
+            <img src="https://fp.esliceu.com/wp-content/uploads/2017/09/cropped-ximanela.jpg" alt="logo"
+                title="Logo Es Liceu">
+        </div>
+        <div>
+            <span id="titol">Aplicacions Web - Examen JS - 24/02/2025</span>
+        </div>
+    </header>
+    <main>
+        <ol>
+            <li class="enunciat">
+                <div class="titulo">Teorema de Pitàgores (30 punts)</div>
+                <div class="contenedor">
+                    <div class="left">
+                        <div class="explicacio">
+                            <p>
+                                Es vol calcular l'hipotenusa d'un triangle rectangle, coneixent els seus catets.<br>
+                                El teorema de Pitàgores diu que l'hipotenusa és l'arrel quadrada de la suma dels
+                                quadrats dels catets.
+                            </p>
+                            <p>
+                                Requisits:
+                            <ul>
+                                <li>Donats dos catets, calcular l'hipotenusa.</li>
+                                <li>Han de ser números positius.</li>
+                                <li>Arrodoneu el resultat a 2 decimals.</li>
+                                <li>Heu d'avisar a l'usuari si falten dades.</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="exercici">
+                            <p>
+                                <label for="a">a:</label>
+                                <input type="number" name="a" id="a">
+                                <label for="b">b:</label>
+                                <input type="number" name="b" id="b">
+                            </p>
+                            <p>
+                                <label>Resultat hipotenusa (h):
+                                    <span id="hipotenusa"></span>
+                                </label>
+                            </p>
+                            <p>
+                                <button id="calculaHipotenusa">Calcula</button>
+                                <button id="netejaEx1">Neteja</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="./img/pitagoras.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <li class="enunciat">
+                <div class="titulo">Llançament de daus (40 punts)</div>
+                <div class="contenedor">
+                    <div class="left">
+                        <div class="explicacio">
+                            <p>
+                                Es vol simular el llançament continu de dos daus. Si són iguals, felicitar l'usuari.
+                            </p>
+                            <p>
+                                Requisits:
+                            <ul>
+                                <li>S'han de generar constantment tirades aleatòries dels daus</li>
+                                <li>Mostrar una imatge de cada dau amb el número obtingut.</li>
+                                <li>Quan s'atura, si els daus són iguals, mostrar un missatge d'enhorabona.</li>
+                                <li>El botó "Llança" també serveix per aturar (ha de canviar el text i el color de
+                                    fons).</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="exercici">
+                            <p>
+                                <button id="lanzaDados">Llança</button>
+                                <button id="netejaEx2">Neteja</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div id="dau1" class="dau">
+                            <img src="./img/dado1.svg" alt="dau1">
+                        </div>
+                        <div id="dau2" class="dau">
+                            <img src="./img/dado1.svg" alt="dau2">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="enunciat">
+                <div class="titulo">Dark Mode (30 punts)</div>
+                <div class="contenedor">
+                    <div class="left">
+                        <div class="explicacio">
+                            <p>
+                                S'ha de canviar l'estil de la pàgina a mode fosc.
+                            </p>
+                            <p>
+                                Requisits:
+                            <ul>
+                                <li>El fons passa a ser obscur.</li>
+                                <li>El text és clar.</li>
+                                <li>Canviau les classes necessàries (ja són al CSS).</li>
+                                <li>El botó també ha de canviar (de Sol a Lluna): fa-moon → fa-sun.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button id="darkMode"><i class="fa-solid fa-moon"></i></button>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </main>
+    <footer>
+        &copy; Daniel Martínez
+    </footer>
+</body>
+
+</html>
